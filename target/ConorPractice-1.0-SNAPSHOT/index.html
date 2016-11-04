@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html>
+    <body>
+        <h3>GET request to multiply two numbers</h3>
+        <form action="api/multiplier/mservice" method="get">
+            Enter two numbers to be multiplied: <br> 
+            <input type="text" name="num1">
+            <input type="text" name="num2">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <h3>POST request to add ID, name & city</h3>
+        <br>
+        <form action="api/persons" method="POST">
+            <div style="width: 200px; text-align: left;">
+                <div style="padding:10px;">
+                    Person ID: <input name="id" />
+                </div>
+                <div style="padding:10px;">
+                    Person Name: <input name="personname" />
+                </div>
+                <div style="padding:10px;">
+                    Person Country: <input name="personcity" />
+                </div>
+                <div style="padding:10px;text-align:center">
+                    <input type="submit" value="Submit" />
+                </div>
+            </div>
+        </form>
+        <br>
+        <form action="api/persons/count">
+            <p>Click the button to view how many persons there are! <input type="submit" value="Submit" /></p>
+        </form>
+        <br>
+        <form action="api/persons/">
+            <p>Click the button to view all the persons created! <input type="submit" value="Submit" /></p>
+        </form>
+        <br>
+        <p>Go to the persons page above, and append 'delete/id' of the ID number you wish to delete
+            i.e. http://localhost:8080/api/persons/delete/3 will delete the person with the ID of 3. Don't forget to refresh the page! </p>
+        <br>
+        <form method="post" action="api/capractice/postFromForm">
+            Enter your name and password for our system: <br> 
+            Name:     <input type="text" name="name">
+            <br>
+            Password: <input type="password" name="password">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <form method="post" action="api/capractice/postFromFormRandomText">
+            Enter a random number between 1 and 100: <br> 
+            <input type="text" name="randomNumber">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
